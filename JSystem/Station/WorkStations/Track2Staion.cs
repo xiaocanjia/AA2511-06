@@ -1,9 +1,7 @@
-﻿using JSystem.Device;
-using JSystem.IO;
-using JSystem.Perform;
-using System;
+﻿using System;
 using System.Threading;
-using System.Windows.Forms;
+using JSystem.Param;
+using JSystem.Perform;
 
 namespace JSystem.Station
 {
@@ -13,7 +11,8 @@ namespace JSystem.Station
         {
             等待来料,
             顶升,
-            等待取料
+            等待取料,
+            移动治具到皮带3
         }
 
         private string _track = "";
@@ -61,7 +60,8 @@ namespace JSystem.Station
                             }
                             break;
                         case (int)EStationStep.等待取料:
-                            if (!OnGetIn($"{_track}2感应有料1") && !OnGetIn($"{_track}2感应有料2") &&
+                            if (OnGetStation($"搬运工站").Step != (int)TransferStation.EStationStep.等待测试完成 && 
+                                !OnGetIn($"{_track}2感应有料1") && !OnGetIn($"{_track}2感应有料2") &&
                                 !OnGetIn($"{_track}2顶板有料1") || !OnGetIn($"{_track}2顶板有料2"))
                             {
                                 AddLog("产品已取走");
@@ -72,6 +72,17 @@ namespace JSystem.Station
                                 SetOut($"{_track}2顶升缸上升", false);
                                 SetOut($"{_track}2顶升缸下降", true);
                                 if (!GetIn($"{_track}2顶升缸降到位", true, 3000))
+                                    break;
+                                if (ParamManager.GetBoolParam("产品夹具分离"))
+                                    JumpStep((int)EStationStep.移动治具到皮带3);
+                                else
+                                    JumpStep((int)EStationStep.等待来料);
+                            }
+                            break;
+                        case (int)EStationStep.移动治具到皮带3:
+                            if (OnGetStation($"{_track}3工站").Step == (int)Track3Station.EStationStep.等待来料)
+                            {
+                                if (!MoveBelt($"{_track}2", $"{_track}3"))
                                     break;
                                 JumpStep((int)EStationStep.等待来料);
                             }
