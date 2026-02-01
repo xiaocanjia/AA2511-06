@@ -1,0 +1,685 @@
+{
+  "$type": "JSystem.Project.SysManagers, JSystem",
+  "PointsList": {
+    "$type": "System.Collections.Generic.List`1[[JSystem.Station.PointPos, JSystem]], mscorlib",
+    "$values": [
+      {
+        "$type": "JSystem.Station.PointPos, JSystem",
+        "Name": "拍照位",
+        "AxesCoord": {
+          "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+          "$values": [
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "X轴",
+              "Pos": 0.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "Y轴",
+              "Pos": 0.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "Z轴",
+              "Pos": 0.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            }
+          ]
+        }
+      },
+      {
+        "$type": "JSystem.Station.PointPos, JSystem",
+        "Name": "清洗起始位",
+        "AxesCoord": {
+          "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+          "$values": [
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "X轴",
+              "Pos": 75.124,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "Y轴",
+              "Pos": -122.718,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "Z轴",
+              "Pos": -0.001,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "Meas2DMgrs": null,
+  "Info": {
+    "$type": "JSystem.Station.PdtInfo, JSystem",
+    "Width": 200.0,
+    "Length": 300.0,
+    "InitX": 10.0,
+    "InitY": 10.0,
+    "InitZ": 10.0,
+    "Speed": 100.0,
+    "Interval": 30.0,
+    "Direction": 1,
+    "PointsList": {
+      "$type": "System.Collections.Generic.List`1[[JSystem.Station.PointPos, JSystem]], mscorlib",
+      "$values": [
+        {
+          "$type": "JSystem.Station.PointPos, JSystem",
+          "Name": "",
+          "AxesCoord": {
+            "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+            "$values": [
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "X轴",
+                "Pos": 10.0,
+                "Speed": 100.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Y轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Z轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              }
+            ]
+          }
+        },
+        {
+          "$type": "JSystem.Station.PointPos, JSystem",
+          "Name": "",
+          "AxesCoord": {
+            "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+            "$values": [
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "X轴",
+                "Pos": 10.0,
+                "Speed": 100.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Y轴",
+                "Pos": 190.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Z轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              }
+            ]
+          }
+        },
+        {
+          "$type": "JSystem.Station.PointPos, JSystem",
+          "Name": "",
+          "AxesCoord": {
+            "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+            "$values": [
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "X轴",
+                "Pos": 40.0,
+                "Speed": 100.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Y轴",
+                "Pos": 190.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Z轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              }
+            ]
+          }
+        },
+        {
+          "$type": "JSystem.Station.PointPos, JSystem",
+          "Name": "",
+          "AxesCoord": {
+            "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+            "$values": [
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "X轴",
+                "Pos": 40.0,
+                "Speed": 100.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Y轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Z轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              }
+            ]
+          }
+        },
+        {
+          "$type": "JSystem.Station.PointPos, JSystem",
+          "Name": "",
+          "AxesCoord": {
+            "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+            "$values": [
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "X轴",
+                "Pos": 70.0,
+                "Speed": 100.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Y轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Z轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              }
+            ]
+          }
+        },
+        {
+          "$type": "JSystem.Station.PointPos, JSystem",
+          "Name": "",
+          "AxesCoord": {
+            "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+            "$values": [
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "X轴",
+                "Pos": 70.0,
+                "Speed": 100.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Y轴",
+                "Pos": 190.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Z轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              }
+            ]
+          }
+        },
+        {
+          "$type": "JSystem.Station.PointPos, JSystem",
+          "Name": "",
+          "AxesCoord": {
+            "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+            "$values": [
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "X轴",
+                "Pos": 100.0,
+                "Speed": 100.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Y轴",
+                "Pos": 190.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Z轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              }
+            ]
+          }
+        },
+        {
+          "$type": "JSystem.Station.PointPos, JSystem",
+          "Name": "",
+          "AxesCoord": {
+            "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+            "$values": [
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "X轴",
+                "Pos": 100.0,
+                "Speed": 100.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Y轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Z轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              }
+            ]
+          }
+        },
+        {
+          "$type": "JSystem.Station.PointPos, JSystem",
+          "Name": "",
+          "AxesCoord": {
+            "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+            "$values": [
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "X轴",
+                "Pos": 130.0,
+                "Speed": 100.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Y轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Z轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              }
+            ]
+          }
+        },
+        {
+          "$type": "JSystem.Station.PointPos, JSystem",
+          "Name": "",
+          "AxesCoord": {
+            "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+            "$values": [
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "X轴",
+                "Pos": 130.0,
+                "Speed": 100.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Y轴",
+                "Pos": 190.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Z轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              }
+            ]
+          }
+        },
+        {
+          "$type": "JSystem.Station.PointPos, JSystem",
+          "Name": "",
+          "AxesCoord": {
+            "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+            "$values": [
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "X轴",
+                "Pos": 160.0,
+                "Speed": 100.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Y轴",
+                "Pos": 190.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Z轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              }
+            ]
+          }
+        },
+        {
+          "$type": "JSystem.Station.PointPos, JSystem",
+          "Name": "",
+          "AxesCoord": {
+            "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+            "$values": [
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "X轴",
+                "Pos": 160.0,
+                "Speed": 100.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Y轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Z轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              }
+            ]
+          }
+        },
+        {
+          "$type": "JSystem.Station.PointPos, JSystem",
+          "Name": "",
+          "AxesCoord": {
+            "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+            "$values": [
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "X轴",
+                "Pos": 190.0,
+                "Speed": 100.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Y轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Z轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              }
+            ]
+          }
+        },
+        {
+          "$type": "JSystem.Station.PointPos, JSystem",
+          "Name": "",
+          "AxesCoord": {
+            "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+            "$values": [
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "X轴",
+                "Pos": 190.0,
+                "Speed": 100.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Y轴",
+                "Pos": 190.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Z轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              }
+            ]
+          }
+        },
+        {
+          "$type": "JSystem.Station.PointPos, JSystem",
+          "Name": "",
+          "AxesCoord": {
+            "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+            "$values": [
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "X轴",
+                "Pos": 220.0,
+                "Speed": 100.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Y轴",
+                "Pos": 190.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Z轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              }
+            ]
+          }
+        },
+        {
+          "$type": "JSystem.Station.PointPos, JSystem",
+          "Name": "",
+          "AxesCoord": {
+            "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+            "$values": [
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "X轴",
+                "Pos": 220.0,
+                "Speed": 100.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Y轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Z轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              }
+            ]
+          }
+        },
+        {
+          "$type": "JSystem.Station.PointPos, JSystem",
+          "Name": "",
+          "AxesCoord": {
+            "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+            "$values": [
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "X轴",
+                "Pos": 250.0,
+                "Speed": 100.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Y轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Z轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              }
+            ]
+          }
+        },
+        {
+          "$type": "JSystem.Station.PointPos, JSystem",
+          "Name": "",
+          "AxesCoord": {
+            "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+            "$values": [
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "X轴",
+                "Pos": 250.0,
+                "Speed": 100.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Y轴",
+                "Pos": 190.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              },
+              {
+                "$type": "JSystem.Station.AxisCoord, JSystem",
+                "Name": "Z轴",
+                "Pos": 10.0,
+                "Speed": -1.0,
+                "TimeOut": 10000,
+                "Enabled": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

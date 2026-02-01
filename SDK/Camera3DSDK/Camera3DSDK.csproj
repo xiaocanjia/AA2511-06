@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE58EBCA-06AC-44D0-B0AC-C9808490894C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Camera3DSDK</RootNamespace>
+    <AssemblyName>Camera3DSDK</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FsApiNet, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Debug\FsApiNet.dll</HintPath>
+    </Reference>
+    <Reference Include="GoSdkNet">
+      <HintPath>..\Packages\LMI\GoSdkNet.dll</HintPath>
+    </Reference>
+    <Reference Include="JLogging, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Packages\JLib\JLogging.dll</HintPath>
+    </Reference>
+    <Reference Include="kApiNet">
+      <HintPath>..\Packages\LMI\kApiNet.dll</HintPath>
+    </Reference>
+    <Reference Include="MvStereoAppSDK.Net">
+      <HintPath>..\Packages\HIK\MvStereoAppSDK.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NvtLvmSdk">
+      <HintPath>..\..\Packages\LVM\NvtLvmSdk.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EParamNames.cs" />
+    <Compile Include="EScannerType.cs" />
+    <Compile Include="Focalspec\LCI.cs" />
+    <Compile Include="Focalspec\SensorParameterStore.cs" />
+    <Compile Include="HIK\MvStereo.cs" />
+    <Compile Include="I3DCamera.cs" />
+    <Compile Include="Keyence\KeyenceLJX8XXX.cs" />
+    <Compile Include="Keyence\KeyenceLJX8IF.cs" />
+    <Compile Include="Keyence\PinnedObject.cs" />
+    <Compile Include="Cam3DFactory.cs" />
+    <Compile Include="LMI\LMILine.cs" />
+    <Compile Include="LVM\LVMCapture.cs" />
+    <Compile Include="SSZN\Enum.cs" />
+    <Compile Include="SSZN\SR7LinkFunc.cs" />
+    <Compile Include="SSZN\SSZNSR7000.cs" />
+    <Compile Include="VoNet\VONetLinkFunc.cs" />
+    <Compile Include="VoNet\VoNetLP3000.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

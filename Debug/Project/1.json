@@ -1,0 +1,999 @@
+{
+  "$type": "JSystem.Project.SysManagers, JSystem",
+  "PointsList": {
+    "$type": "System.Collections.Generic.List`1[[JSystem.Station.PointPos, JSystem]], mscorlib",
+    "$values": [
+      {
+        "$type": "JSystem.Station.PointPos, JSystem",
+        "Name": "安全高度",
+        "AxesCoord": {
+          "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+          "$values": [
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Z轴",
+              "Pos": 0.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            }
+          ]
+        }
+      },
+      {
+        "$type": "JSystem.Station.PointPos, JSystem",
+        "Name": "取料安全位",
+        "AxesCoord": {
+          "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+          "$values": [
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运X轴",
+              "Pos": 0.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Y轴",
+              "Pos": 80.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Z轴",
+              "Pos": 0.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运R轴",
+              "Pos": 0.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            }
+          ]
+        }
+      },
+      {
+        "$type": "JSystem.Station.PointPos, JSystem",
+        "Name": "A轨拍照位",
+        "AxesCoord": {
+          "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+          "$values": [
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运X轴",
+              "Pos": 0.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Y轴",
+              "Pos": 80.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Z轴",
+              "Pos": 0.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            }
+          ]
+        }
+      },
+      {
+        "$type": "JSystem.Station.PointPos, JSystem",
+        "Name": "B轨拍照位",
+        "AxesCoord": {
+          "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+          "$values": [
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运X轴",
+              "Pos": 0.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Y轴",
+              "Pos": 390.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Z轴",
+              "Pos": 0.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            }
+          ]
+        }
+      },
+      {
+        "$type": "JSystem.Station.PointPos, JSystem",
+        "Name": "取A轨生料位",
+        "AxesCoord": {
+          "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+          "$values": [
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运X轴",
+              "Pos": -59.87,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Y轴",
+              "Pos": 80.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Z轴",
+              "Pos": 35.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运R轴",
+              "Pos": 0.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            }
+          ]
+        }
+      },
+      {
+        "$type": "JSystem.Station.PointPos, JSystem",
+        "Name": "取B轨生料位",
+        "AxesCoord": {
+          "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+          "$values": [
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运X轴",
+              "Pos": -59.87,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Y轴",
+              "Pos": 436.237,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Z轴",
+              "Pos": 35.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运R轴",
+              "Pos": 0.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            }
+          ]
+        }
+      },
+      {
+        "$type": "JSystem.Station.PointPos, JSystem",
+        "Name": "放A轨熟料位",
+        "AxesCoord": {
+          "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+          "$values": [
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运X轴",
+              "Pos": 53.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Y轴",
+              "Pos": 80.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Z轴",
+              "Pos": 35.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运R轴",
+              "Pos": 180.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            }
+          ]
+        }
+      },
+      {
+        "$type": "JSystem.Station.PointPos, JSystem",
+        "Name": "放B轨熟料位",
+        "AxesCoord": {
+          "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+          "$values": [
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运X轴",
+              "Pos": 53.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Y轴",
+              "Pos": 400.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Z轴",
+              "Pos": 35.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运R轴",
+              "Pos": 180.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            }
+          ]
+        }
+      },
+      {
+        "$type": "JSystem.Station.PointPos, JSystem",
+        "Name": "放料安全位",
+        "AxesCoord": {
+          "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+          "$values": [
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运X轴",
+              "Pos": 0.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Y轴",
+              "Pos": 475.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Z轴",
+              "Pos": 35.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运R轴",
+              "Pos": 180.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            }
+          ]
+        }
+      },
+      {
+        "$type": "JSystem.Station.PointPos, JSystem",
+        "Name": "放左穴生料位",
+        "AxesCoord": {
+          "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+          "$values": [
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运X轴",
+              "Pos": -67.094,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Y轴",
+              "Pos": 475.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Z轴",
+              "Pos": 35.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运R轴",
+              "Pos": 180.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            }
+          ]
+        }
+      },
+      {
+        "$type": "JSystem.Station.PointPos, JSystem",
+        "Name": "放右穴生料位",
+        "AxesCoord": {
+          "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+          "$values": [
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运X轴",
+              "Pos": 63.037,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Y轴",
+              "Pos": 475.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Z轴",
+              "Pos": 35.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运R轴",
+              "Pos": 180.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            }
+          ]
+        }
+      },
+      {
+        "$type": "JSystem.Station.PointPos, JSystem",
+        "Name": "取左穴熟料位",
+        "AxesCoord": {
+          "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+          "$values": [
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运X轴",
+              "Pos": -67.094,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Y轴",
+              "Pos": 475.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Z轴",
+              "Pos": 35.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运R轴",
+              "Pos": 0.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "左测试Y轴",
+              "Pos": 0.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            }
+          ]
+        }
+      },
+      {
+        "$type": "JSystem.Station.PointPos, JSystem",
+        "Name": "取右穴熟料位",
+        "AxesCoord": {
+          "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+          "$values": [
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运X轴",
+              "Pos": 63.037,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Y轴",
+              "Pos": 475.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运Z轴",
+              "Pos": 35.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "搬运R轴",
+              "Pos": 0.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "右测试Y轴",
+              "Pos": 0.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            }
+          ]
+        }
+      },
+      {
+        "$type": "JSystem.Station.PointPos, JSystem",
+        "Name": "左穴拍照位",
+        "AxesCoord": {
+          "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+          "$values": [
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "左测试X轴",
+              "Pos": 36.768,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "左测试Y轴",
+              "Pos": 195.08,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "左测试Z轴",
+              "Pos": 17.822,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            }
+          ]
+        }
+      },
+      {
+        "$type": "JSystem.Station.PointPos, JSystem",
+        "Name": "右穴拍照位",
+        "AxesCoord": {
+          "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+          "$values": [
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "右测试X轴",
+              "Pos": 97.0,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "右测试Y轴",
+              "Pos": 199.472,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            },
+            {
+              "$type": "JSystem.Station.AxisCoord, JSystem",
+              "Name": "右测试Z轴",
+              "Pos": 15.153,
+              "Speed": -1.0,
+              "TimeOut": 10000,
+              "Enabled": true
+            }
+          ]
+        }
+      },
+      {
+        "$type": "JSystem.Station.PointPos, JSystem",
+        "Name": "左穴下压极限位",
+        "AxesCoord": {
+          "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+          "$values": []
+        }
+      },
+      {
+        "$type": "JSystem.Station.PointPos, JSystem",
+        "Name": "左穴滚压起始位",
+        "AxesCoord": {
+          "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+          "$values": []
+        }
+      },
+      {
+        "$type": "JSystem.Station.PointPos, JSystem",
+        "Name": "左穴滚压终止位",
+        "AxesCoord": {
+          "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+          "$values": []
+        }
+      },
+      {
+        "$type": "JSystem.Station.PointPos, JSystem",
+        "Name": "右穴下压极限位",
+        "AxesCoord": {
+          "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+          "$values": []
+        }
+      },
+      {
+        "$type": "JSystem.Station.PointPos, JSystem",
+        "Name": "右穴滚压起始位",
+        "AxesCoord": {
+          "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+          "$values": []
+        }
+      },
+      {
+        "$type": "JSystem.Station.PointPos, JSystem",
+        "Name": "右穴滚压终止位",
+        "AxesCoord": {
+          "$type": "System.Collections.Generic.List`1[[JSystem.Station.AxisCoord, JSystem]], mscorlib",
+          "$values": []
+        }
+      }
+    ]
+  },
+  "Meas2DMgrA": {
+    "$type": "Meas2D.Meas2DManager, Meas2D",
+    "CamParCalibMgr": {
+      "$type": "Meas2D.Calib.CamParCalibManager, Meas2D",
+      "CamParRawData": null,
+      "CamPoseRawData": null,
+      "CellWidth": 0.00245,
+      "CellHeight": 0.0024,
+      "FocalDist": 25.0,
+      "PlateRow": 7,
+      "PlateCol": 7,
+      "PlateMarkDist": 10.0,
+      "PlateMarkDiameter": 5.0,
+      "FOVWidth": 282.0,
+      "FOVHeight": 195.0,
+      "IsCalibed": false,
+      "Scale": 1.0
+    },
+    "EyeInHandCalibMgr": {
+      "$type": "Meas2D.EyeInHandCalibManager, Meas2D",
+      "Mat2DRawData": null,
+      "IsCalibed": false,
+      "PixelXArr": {
+        "$type": "System.Double[], mscorlib",
+        "$values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "PixelYArr": {
+        "$type": "System.Double[], mscorlib",
+        "$values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "RotateXArr": {
+        "$type": "System.Double[], mscorlib",
+        "$values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "RotateYArr": {
+        "$type": "System.Double[], mscorlib",
+        "$values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "MachineX": 1.0,
+      "MachineY": 1.0,
+      "Offset": null
+    },
+    "ToolMgr": {
+      "$type": "Meas2D.Tool.Tools2DManager, Meas2D",
+      "ToolsList": {
+        "$type": "System.Collections.Generic.List`1[[Meas2D.Tool.Tool2DBaseModel, Meas2D]], mscorlib",
+        "$values": []
+      }
+    },
+    "FixPosMgr": {
+      "$type": "Meas2D.FixPos.FixPos2DManager, Meas2D",
+      "Loc": null,
+      "CurrFixPos": null,
+      "CurrPos": null
+    },
+    "IsSaveImage": false,
+    "IsSaveFailOnly": false,
+    "IsSaveData": false,
+    "IsSaveApart": false,
+    "ImageDir": "D:\\工程\\华为\\AA2511-06\\Code\\Debug\\Image",
+    "DataDir": "D:\\工程\\华为\\AA2511-06\\Code\\Debug\\Data"
+  },
+  "Meas2DMgrB": {
+    "$type": "Meas2D.Meas2DManager, Meas2D",
+    "CamParCalibMgr": {
+      "$type": "Meas2D.Calib.CamParCalibManager, Meas2D",
+      "CamParRawData": null,
+      "CamPoseRawData": null,
+      "CellWidth": 0.00245,
+      "CellHeight": 0.0024,
+      "FocalDist": 25.0,
+      "PlateRow": 7,
+      "PlateCol": 7,
+      "PlateMarkDist": 10.0,
+      "PlateMarkDiameter": 5.0,
+      "FOVWidth": 282.0,
+      "FOVHeight": 195.0,
+      "IsCalibed": false,
+      "Scale": 1.0
+    },
+    "EyeInHandCalibMgr": {
+      "$type": "Meas2D.EyeInHandCalibManager, Meas2D",
+      "Mat2DRawData": null,
+      "IsCalibed": false,
+      "PixelXArr": {
+        "$type": "System.Double[], mscorlib",
+        "$values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "PixelYArr": {
+        "$type": "System.Double[], mscorlib",
+        "$values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "RotateXArr": {
+        "$type": "System.Double[], mscorlib",
+        "$values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "RotateYArr": {
+        "$type": "System.Double[], mscorlib",
+        "$values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "MachineX": 1.0,
+      "MachineY": 1.0,
+      "Offset": null
+    },
+    "ToolMgr": {
+      "$type": "Meas2D.Tool.Tools2DManager, Meas2D",
+      "ToolsList": {
+        "$type": "System.Collections.Generic.List`1[[Meas2D.Tool.Tool2DBaseModel, Meas2D]], mscorlib",
+        "$values": []
+      }
+    },
+    "FixPosMgr": {
+      "$type": "Meas2D.FixPos.FixPos2DManager, Meas2D",
+      "Loc": null,
+      "CurrFixPos": null,
+      "CurrPos": null
+    },
+    "IsSaveImage": false,
+    "IsSaveFailOnly": false,
+    "IsSaveData": false,
+    "IsSaveApart": false,
+    "ImageDir": "D:\\工程\\华为\\AA2511-06\\Code\\Debug\\Image",
+    "DataDir": "D:\\工程\\华为\\AA2511-06\\Code\\Debug\\Data"
+  },
+  "Meas2DMgrL": {
+    "$type": "Meas2D.Meas2DManager, Meas2D",
+    "CamParCalibMgr": {
+      "$type": "Meas2D.Calib.CamParCalibManager, Meas2D",
+      "CamParRawData": null,
+      "CamPoseRawData": null,
+      "CellWidth": 0.00245,
+      "CellHeight": 0.0024,
+      "FocalDist": 25.0,
+      "PlateRow": 7,
+      "PlateCol": 7,
+      "PlateMarkDist": 10.0,
+      "PlateMarkDiameter": 5.0,
+      "FOVWidth": 282.0,
+      "FOVHeight": 195.0,
+      "IsCalibed": false,
+      "Scale": 1.0
+    },
+    "EyeInHandCalibMgr": {
+      "$type": "Meas2D.EyeInHandCalibManager, Meas2D",
+      "Mat2DRawData": null,
+      "IsCalibed": false,
+      "PixelXArr": {
+        "$type": "System.Double[], mscorlib",
+        "$values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "PixelYArr": {
+        "$type": "System.Double[], mscorlib",
+        "$values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "RotateXArr": {
+        "$type": "System.Double[], mscorlib",
+        "$values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "RotateYArr": {
+        "$type": "System.Double[], mscorlib",
+        "$values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "MachineX": 1.0,
+      "MachineY": 1.0,
+      "Offset": null
+    },
+    "ToolMgr": {
+      "$type": "Meas2D.Tool.Tools2DManager, Meas2D",
+      "ToolsList": {
+        "$type": "System.Collections.Generic.List`1[[Meas2D.Tool.Tool2DBaseModel, Meas2D]], mscorlib",
+        "$values": []
+      }
+    },
+    "FixPosMgr": {
+      "$type": "Meas2D.FixPos.FixPos2DManager, Meas2D",
+      "Loc": null,
+      "CurrFixPos": null,
+      "CurrPos": null
+    },
+    "IsSaveImage": false,
+    "IsSaveFailOnly": false,
+    "IsSaveData": false,
+    "IsSaveApart": false,
+    "ImageDir": "D:\\工程\\华为\\AA2511-06\\Code\\Debug\\Image",
+    "DataDir": "D:\\工程\\华为\\AA2511-06\\Code\\Debug\\Data"
+  },
+  "Meas2DMgrR": {
+    "$type": "Meas2D.Meas2DManager, Meas2D",
+    "CamParCalibMgr": {
+      "$type": "Meas2D.Calib.CamParCalibManager, Meas2D",
+      "CamParRawData": null,
+      "CamPoseRawData": null,
+      "CellWidth": 0.00245,
+      "CellHeight": 0.0024,
+      "FocalDist": 25.0,
+      "PlateRow": 7,
+      "PlateCol": 7,
+      "PlateMarkDist": 10.0,
+      "PlateMarkDiameter": 5.0,
+      "FOVWidth": 282.0,
+      "FOVHeight": 195.0,
+      "IsCalibed": false,
+      "Scale": 1.0
+    },
+    "EyeInHandCalibMgr": {
+      "$type": "Meas2D.EyeInHandCalibManager, Meas2D",
+      "Mat2DRawData": null,
+      "IsCalibed": false,
+      "PixelXArr": {
+        "$type": "System.Double[], mscorlib",
+        "$values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "PixelYArr": {
+        "$type": "System.Double[], mscorlib",
+        "$values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "RotateXArr": {
+        "$type": "System.Double[], mscorlib",
+        "$values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "RotateYArr": {
+        "$type": "System.Double[], mscorlib",
+        "$values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "MachineX": 1.0,
+      "MachineY": 1.0,
+      "Offset": null
+    },
+    "ToolMgr": {
+      "$type": "Meas2D.Tool.Tools2DManager, Meas2D",
+      "ToolsList": {
+        "$type": "System.Collections.Generic.List`1[[Meas2D.Tool.Tool2DBaseModel, Meas2D]], mscorlib",
+        "$values": []
+      }
+    },
+    "FixPosMgr": {
+      "$type": "Meas2D.FixPos.FixPos2DManager, Meas2D",
+      "Loc": null,
+      "CurrFixPos": null,
+      "CurrPos": null
+    },
+    "IsSaveImage": false,
+    "IsSaveFailOnly": false,
+    "IsSaveData": false,
+    "IsSaveApart": false,
+    "ImageDir": "D:\\工程\\华为\\AA2511-06\\Code\\Debug\\Image",
+    "DataDir": "D:\\工程\\华为\\AA2511-06\\Code\\Debug\\Data"
+  }
+}

@@ -1,0 +1,762 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{85BE006E-57F7-4B87-ACFD-55CB3921CBA4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>JSystem</RootNamespace>
+    <AssemblyName>JSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AlgoLib, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Packages\JLib\AlgoLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Automation.BDaq4, Version=4.0.0.0, Culture=neutral, PublicKeyToken=463f5928d60183a0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Automation.BDaq4.dll</HintPath>
+    </Reference>
+    <Reference Include="Automation.BDaq4.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=463f5928d60183a0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Automation.BDaq4.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="BSLib, Version=0.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\BSLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Confluent.Kafka, Version=2.2.0.0, Culture=neutral, PublicKeyToken=12c514ca49093d1e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Packages\Mes\Kafka\Confluent.Kafka.dll</HintPath>
+    </Reference>
+    <Reference Include="DataLogging">
+      <HintPath>..\Packages\JLib\DataLogging.dll</HintPath>
+    </Reference>
+    <Reference Include="FileHelper">
+      <HintPath>..\Packages\JLib\FileHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="FolderSelectDialog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\FolderSelectDialog.dll</HintPath>
+    </Reference>
+    <Reference Include="halcondotnet, Version=17.12.0.0, Culture=neutral, PublicKeyToken=4973bed59ddbf2b8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\halcondotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="Ivi.Visa, Version=5.11.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Ivi.Visa.dll</HintPath>
+    </Reference>
+    <Reference Include="JLogging, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Meas2D, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Packages\JLib\Meas2D.dll</HintPath>
+    </Reference>
+    <Reference Include="Meas3D, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Packages\JLib\Meas3D.dll</HintPath>
+    </Reference>
+    <Reference Include="MeasResult, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Packages\JLib\MeasResult.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Modbus, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Packages\Modbus\Modbus.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.Visa, Version=22.5.0.49212, Culture=neutral, PublicKeyToken=2eaa5af0834e221d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\NationalInstruments.Visa.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RTCCmdDll, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\RTCCmdDll.dll</HintPath>
+    </Reference>
+    <Reference Include="SunnyUI, Version=3.2.6.1, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\SunnyUI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Vision2D, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Packages\JLib\Vision2D.dll</HintPath>
+    </Reference>
+    <Reference Include="Vision3D, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Packages\JLib\Vision3D.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Device\AnalogCard\AnalogCard.cs" />
+    <Compile Include="Device\AnalogCard\AnalogCardView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\AnalogCard\AnalogCardView.Designer.cs">
+      <DependentUpon>AnalogCardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\IOT\IOTSys.cs" />
+    <Compile Include="Device\IOT\IOTSysView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\IOT\IOTSysView.Designer.cs">
+      <DependentUpon>IOTSysView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\SerialComm\Barometer\Barometer.cs" />
+    <Compile Include="Device\SerialComm\Barometer\BarometerView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\SerialComm\Barometer\BarometerView.Designer.cs">
+      <DependentUpon>BarometerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\SerialComm\ConicaLumeter\ConicaLumeter.cs" />
+    <Compile Include="Device\SerialComm\ConicaLumeter\ConicaLumeterView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\SerialComm\ConicaLumeter\ConicaLumeterView.Designer.cs">
+      <DependentUpon>ConicaLumeterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\SerialComm\CSLumeter\CSLumeter.cs" />
+    <Compile Include="Device\SerialComm\CSLumeter\CSLumeterView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\SerialComm\CSLumeter\CSLumeterView.Designer.cs">
+      <DependentUpon>CSLumeterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\SerialComm\HYBluetooth\HYBluetoothView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\SerialComm\HYBluetooth\HYBluetoothView.Designer.cs">
+      <DependentUpon>HYBluetoothView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\SerialComm\TPSocket\TPSocket.cs" />
+    <Compile Include="Device\SerialComm\TPSocket\TPSocketView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\SerialComm\TPSocket\TPSocketView.Designer.cs">
+      <DependentUpon>TPSocketView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\TCPClient\DirectPressSensor\DirectPressSensor.cs" />
+    <Compile Include="Device\TCPClient\DirectPressSensor\DirectPressSensorView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\TCPClient\DirectPressSensor\DirectPressSensorView.Designer.cs">
+      <DependentUpon>DirectPressSensorView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\TCPClient\RollPressSensor\RollPressSensor.cs" />
+    <Compile Include="Device\TCPClient\RollPressSensor\RollPressSensorView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\TCPClient\RollPressSensor\RollPressSensorView.Designer.cs">
+      <DependentUpon>RollPressSensorView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project\PasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\PasswordForm.Designer.cs">
+      <DependentUpon>PasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Station\VisionPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Station\VisionPage.Designer.cs">
+      <DependentUpon>VisionPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Station\WorkStations\Track1Station.cs" />
+    <Compile Include="Station\WorkStations\Track2Staion.cs" />
+    <Compile Include="Station\WorkStations\TestStation.cs" />
+    <Compile Include="Device\Board\Board.cs" />
+    <Compile Include="Device\Board\BoardView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\Board\BoardView.Designer.cs">
+      <DependentUpon>BoardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\SerialComm\ScannigGun\ScanningGun.cs" />
+    <Compile Include="Device\SerialComm\ScannigGun\ScanningGunView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\SerialComm\ScannigGun\ScanningGunView.Designer.cs">
+      <DependentUpon>ScanningGunView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\SerialComm\TempController\TempController.cs" />
+    <Compile Include="Device\SerialComm\TempController\TempControllerView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\SerialComm\TempController\TempControllerView.Designer.cs">
+      <DependentUpon>TempControllerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\TCPClient\ScanningGun\ScanningGun.cs" />
+    <Compile Include="Device\TCPClient\ScanningGun\ScanningGunView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\TCPClient\ScanningGun\ScanningGunView.Designer.cs">
+      <DependentUpon>ScanningGunView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IO\IOCfgForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IO\IOCfgForm.Designer.cs">
+      <DependentUpon>IOCfgForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IO\IOParam.cs" />
+    <Compile Include="Device\LightE\LEApp.cs" />
+    <Compile Include="Device\LightE\LEConfocalDLL.cs" />
+    <Compile Include="Device\LightE\LightE.cs" />
+    <Compile Include="Device\LightE\LightEView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\LightE\LightEView.Designer.cs">
+      <DependentUpon>LightEView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\SerialComm\BleBluetooth\BleBluetooth.cs" />
+    <Compile Include="Device\SerialComm\BleBluetooth\BleBluetoothView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\SerialComm\BleBluetooth\BleBluetoothView.Designer.cs">
+      <DependentUpon>BleBluetoothView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\Cam2D\Camera2D.cs" />
+    <Compile Include="Device\Cam2D\Cam2DView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\Cam2D\Cam2DView.Designer.cs">
+      <DependentUpon>Cam2DView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\Cam3D\Camera3D.cs" />
+    <Compile Include="Device\Cam3D\Cam3DView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\Cam3D\Cam3DView.Designer.cs">
+      <DependentUpon>Cam3DView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\Cmd\Cmd.cs" />
+    <Compile Include="Device\Cmd\CmdView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\Cmd\CmdView.Designer.cs">
+      <DependentUpon>CmdView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\DeviceManager.cs" />
+    <Compile Include="Device\DeviceBase.cs" />
+    <Compile Include="Device\SerialComm\HeightSensor\HeightSensor.cs" />
+    <Compile Include="Device\SerialComm\HeightSensor\HeightSensorView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\SerialComm\HeightSensor\HeightSensorView.Designer.cs">
+      <DependentUpon>HeightSensorView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\SerialComm\HYBluetooth\HYBluetooth.cs" />
+    <Compile Include="Device\SerialComm\LeadFluid\BT600F.cs" />
+    <Compile Include="Device\SerialComm\LeadFluid\BT600FView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\SerialComm\LeadFluid\BT600FView.Designer.cs">
+      <DependentUpon>BT600FView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\SerialComm\LightController\LightController.cs" />
+    <Compile Include="Device\SerialComm\LightController\LightControllerView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\SerialComm\LightController\LightControllerView.Designer.cs">
+      <DependentUpon>LightControllerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\Mes\MesSys.cs" />
+    <Compile Include="Device\Mes\MesSysView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\Mes\MesSysView.Designer.cs">
+      <DependentUpon>MesSysView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\ProgramPower\ProgramPower.cs" />
+    <Compile Include="Device\ProgramPower\ProgramPowerView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\ProgramPower\ProgramPowerView.Designer.cs">
+      <DependentUpon>ProgramPowerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\SerialComm\ModbusRtu\ModbusRtu.cs" />
+    <Compile Include="Device\SerialComm\ModbusRtu\ModbusRtuView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\SerialComm\ModbusRtu\ModbusRtuView.Designer.cs">
+      <DependentUpon>ModbusRtuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\SerialComm\SerialComm.cs" />
+    <Compile Include="Device\SerialComm\SerialCommView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\SerialComm\SerialCommView.Designer.cs">
+      <DependentUpon>SerialCommView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\SerialComm\WeightSensor\WeightSensorView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\SerialComm\WeightSensor\WeightSensorView.Designer.cs">
+      <DependentUpon>WeightSensorView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\SerialComm\WeightSensor\WeightSensor.cs" />
+    <Compile Include="Device\SerialComm\WaterTank\WaterTank.cs" />
+    <Compile Include="Device\SerialComm\WaterTank\WaterTankView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\SerialComm\WaterTank\WaterTankView.Designer.cs">
+      <DependentUpon>WaterTankView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\TCPClient\ModbusTcp\ModbusTcp.cs" />
+    <Compile Include="Device\TCPClient\ModbusTcp\ModbusTcpView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\TCPClient\ModbusTcp\ModbusTcpView.Designer.cs">
+      <DependentUpon>ModbusTcpView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\TCPClient\TCPClient.cs" />
+    <Compile Include="Device\TCPClient\TCPClientView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\TCPClient\TCPClientView.Designer.cs">
+      <DependentUpon>TCPClientView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\TCPClient\ZimmerGripper\ZimmerGripper.cs" />
+    <Compile Include="Device\TCPClient\ZimmerGripper\ZimmerGripperView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\TCPClient\ZimmerGripper\ZimmerGripperView.Designer.cs">
+      <DependentUpon>ZimmerGripperView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\TCPServer\TCPServer.cs" />
+    <Compile Include="Device\TCPServer\TCPServerView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\TCPServer\TCPServerView.Designer.cs">
+      <DependentUpon>TCPServerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perform\Status\EDeviceState.cs" />
+    <Compile Include="Device\DevicePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device\DevicePage.Designer.cs">
+      <DependentUpon>DevicePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IO\DIView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IO\DIView.Designer.cs">
+      <DependentUpon>DIView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IO\DOView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IO\DOView.Designer.cs">
+      <DependentUpon>DOView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IO\IOManager.cs" />
+    <Compile Include="IO\IOPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IO\IOPage.Designer.cs">
+      <DependentUpon>IOPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Param\BasicParam.cs" />
+    <Compile Include="Param\ParamManager.cs" />
+    <Compile Include="Param\ParamPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Param\ParamPage.Designer.cs">
+      <DependentUpon>ParamPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perform\PerformPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perform\PerformPage.Designer.cs">
+      <DependentUpon>PerformPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perform\Log\LogManager.cs" />
+    <Compile Include="Perform\Log\LogPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Perform\Log\LogPanel.Designer.cs">
+      <DependentUpon>LogPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\DevStatusPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\DevStatusPanel.Designer.cs">
+      <DependentUpon>DevStatusPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perform\Status\StatusPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Perform\Status\StatusPanel.Designer.cs">
+      <DependentUpon>StatusPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perform\Popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perform\Popup.Designer.cs">
+      <DependentUpon>Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Project\Projects.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\Resource_en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource_en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\Resource_zh.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource_zh.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Station\AxisCoordPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Station\AxisCoordPanel.Designer.cs">
+      <DependentUpon>AxisCoordPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Station\StationAxis.cs" />
+    <Compile Include="Station\AxisStatusPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Station\AxisStatusPanel.Designer.cs">
+      <DependentUpon>AxisStatusPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Station\AxisParamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Station\AxisParamForm.Designer.cs">
+      <DependentUpon>AxisParamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Station\PointPos.cs" />
+    <Compile Include="Station\EStationState.cs" />
+    <Compile Include="Station\StationBase.cs" />
+    <Compile Include="Station\StationManager.cs" />
+    <Compile Include="Station\StationsPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Station\StationsPage.Designer.cs">
+      <DependentUpon>StationsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project\SysManagers.cs" />
+    <Compile Include="Project\ProjectManager.cs" />
+    <Compile Include="Project\ProjectPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Project\ProjectPanel.Designer.cs">
+      <DependentUpon>ProjectPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Station\WorkStations\TransferStation.cs" />
+    <Compile Include="Station\WorkStations\Track4Station.cs" />
+    <Compile Include="Station\WorkStations\Track3Station.cs" />
+    <Compile Include="SysController.cs" />
+    <Compile Include="User\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\ModifyPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\ModifyPasswordForm.Designer.cs">
+      <DependentUpon>ModifyPasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm.Designer.cs">
+      <DependentUpon>WaitForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Device\AnalogCard\AnalogCardView.resx">
+      <DependentUpon>AnalogCardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\Board\BoardView.resx">
+      <DependentUpon>BoardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\IOT\IOTSysView.resx">
+      <DependentUpon>IOTSysView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\LightE\LightEView.resx">
+      <DependentUpon>LightEView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\SerialComm\Barometer\BarometerView.resx">
+      <DependentUpon>BarometerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\SerialComm\BleBluetooth\BleBluetoothView.resx">
+      <DependentUpon>BleBluetoothView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\Cam2D\Cam2DView.resx">
+      <DependentUpon>Cam2DView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\Cam3D\Cam3DView.resx">
+      <DependentUpon>Cam3DView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\Cmd\CmdView.resx">
+      <DependentUpon>CmdView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\DevicePage.resx">
+      <DependentUpon>DevicePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\SerialComm\CSLumeter\CSLumeterView.resx">
+      <DependentUpon>CSLumeterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\SerialComm\HeightSensor\HeightSensorView.resx">
+      <DependentUpon>HeightSensorView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\SerialComm\HYBluetooth\HYBluetoothView.resx">
+      <DependentUpon>HYBluetoothView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\SerialComm\LeadFluid\BT600FView.resx">
+      <DependentUpon>BT600FView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\SerialComm\LightController\LightControllerView.resx">
+      <DependentUpon>LightControllerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\Mes\MesSysView.resx">
+      <DependentUpon>MesSysView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\ProgramPower\ProgramPowerView.resx">
+      <DependentUpon>ProgramPowerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\SerialComm\ConicaLumeter\ConicaLumeterView.resx">
+      <DependentUpon>ConicaLumeterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\SerialComm\ModbusRtu\ModbusRtuView.resx">
+      <DependentUpon>ModbusRtuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\SerialComm\ScannigGun\ScanningGunView.resx">
+      <DependentUpon>ScanningGunView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\SerialComm\SerialCommView.resx">
+      <DependentUpon>SerialCommView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\SerialComm\TempController\TempControllerView.resx">
+      <DependentUpon>TempControllerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\SerialComm\WeightSensor\WeightSensorView.resx">
+      <DependentUpon>WeightSensorView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\SerialComm\WaterTank\WaterTankView.resx">
+      <DependentUpon>WaterTankView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\TCPClient\DirectPressSensor\DirectPressSensorView.resx">
+      <DependentUpon>DirectPressSensorView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\TCPClient\ModbusTcp\ModbusTcpView.resx">
+      <DependentUpon>ModbusTcpView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\TCPClient\RollPressSensor\RollPressSensorView.resx">
+      <DependentUpon>RollPressSensorView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\TCPClient\ScanningGun\ScanningGunView.resx">
+      <DependentUpon>ScanningGunView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\TCPClient\TCPClientView.resx">
+      <DependentUpon>TCPClientView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\TCPClient\ZimmerGripper\ZimmerGripperView.resx">
+      <DependentUpon>ZimmerGripperView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\TCPServer\TCPServerView.resx">
+      <DependentUpon>TCPServerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IO\DIView.resx">
+      <DependentUpon>DIView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IO\DOView.resx">
+      <DependentUpon>DOView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IO\IOCfgForm.resx">
+      <DependentUpon>IOCfgForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IO\IOPage.resx">
+      <DependentUpon>IOPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Param\ParamPage.resx">
+      <DependentUpon>ParamPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perform\PerformPage.resx">
+      <DependentUpon>PerformPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perform\Log\LogPanel.resx">
+      <DependentUpon>LogPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\DevStatusPanel.resx">
+      <DependentUpon>DevStatusPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perform\Status\StatusPanel.resx">
+      <DependentUpon>StatusPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perform\Popup.resx">
+      <DependentUpon>Popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\PasswordForm.resx">
+      <DependentUpon>PasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Resource_en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource_en.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Resource_zh.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource_zh.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Station\AxisStatusPanel.resx">
+      <DependentUpon>AxisStatusPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Station\AxisParamForm.resx">
+      <DependentUpon>AxisParamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Station\AxisCoordPanel.resx">
+      <DependentUpon>AxisCoordPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Station\StationsPage.resx">
+      <DependentUpon>StationsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\ProjectPanel.resx">
+      <DependentUpon>ProjectPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Station\VisionPage.resx">
+      <DependentUpon>VisionPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\ModifyPasswordForm.resx">
+      <DependentUpon>ModifyPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm.resx">
+      <DependentUpon>WaitForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SDK\BoardSDK\BoardSDK.csproj">
+      <Project>{7afb4524-59f0-4119-84ea-56d1fd009bfd}</Project>
+      <Name>BoardSDK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SDK\Camera2DSDK\Camera2DSDK.csproj">
+      <Project>{b2a423ba-57ff-4d15-9483-fa1047618a04}</Project>
+      <Name>Camera2DSDK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SDK\Camera3DSDK\Camera3DSDK.csproj">
+      <Project>{ee58ebca-06ac-44d0-b0ac-c9808490894c}</Project>
+      <Name>Camera3DSDK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SDK\IoTSDK\IOTSDK.csproj">
+      <Project>{c765b125-1dde-4cba-ba91-35b2dd61d6a1}</Project>
+      <Name>IOTSDK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SDK\MesSDK\MesSDK.csproj">
+      <Project>{ab309eae-56a9-43cc-861e-02d622664351}</Project>
+      <Name>MesSDK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

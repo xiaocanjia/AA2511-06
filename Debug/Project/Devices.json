@@ -1,0 +1,218 @@
+{
+  "$type": "System.Collections.Generic.List`1[[JSystem.Device.DeviceBase, JSystem]], mscorlib",
+  "$values": [
+    {
+      "$type": "JSystem.Device.MesSys, JSystem",
+      "Type": 0,
+      "Param": {
+        "$type": "MesSDK.MesParam, MesSys",
+        "IP": null,
+        "Port": 0,
+        "Lot": null,
+        "DeviceID": null,
+        "LineID": null,
+        "StationID": null,
+        "ProductID": null,
+        "StaffID": null,
+        "Version": "V1.0.0"
+      },
+      "Name": "Mes系统",
+      "IsEnable": false
+    },
+    {
+      "$type": "JSystem.Device.Board, JSystem",
+      "BoardType": 6,
+      "Name": "轴卡1",
+      "IsEnable": true
+    },
+    {
+      "$type": "JSystem.Device.Board, JSystem",
+      "BoardType": 6,
+      "Name": "轴卡2",
+      "IsEnable": true
+    },
+    {
+      "$type": "JSystem.Device.Board, JSystem",
+      "BoardType": 6,
+      "Name": "轴卡3",
+      "IsEnable": true
+    },
+    {
+      "$type": "JSystem.Device.Board, JSystem",
+      "BoardType": 5,
+      "Name": "IO卡",
+      "IsEnable": true
+    },
+    {
+      "$type": "JSystem.Device.SerialScanningGun, JSystem",
+      "StartCommand": "start",
+      "EndCommand": "end",
+      "MaxLength": 27,
+      "IsHex": false,
+      "PortName": "COM16",
+      "BaudRate": 115200,
+      "DataBits": 8,
+      "StopBits": 1,
+      "Parity": 0,
+      "Name": "A轨扫码枪",
+      "IsEnable": true
+    },
+    {
+      "$type": "JSystem.Device.SerialScanningGun, JSystem",
+      "StartCommand": "start",
+      "EndCommand": "end",
+      "MaxLength": 27,
+      "IsHex": false,
+      "PortName": "COM17",
+      "BaudRate": 115200,
+      "DataBits": 8,
+      "StopBits": 1,
+      "Parity": 0,
+      "Name": "B轨扫码枪",
+      "IsEnable": true
+    },
+    {
+      "$type": "JSystem.Device.Camera2D, JSystem",
+      "CamType": 0,
+      "Gain": 1.0,
+      "Name": "上料相机",
+      "IsEnable": true
+    },
+    {
+      "$type": "JSystem.Device.Camera2D, JSystem",
+      "CamType": 0,
+      "Gain": 1.0,
+      "Name": "左工位相机",
+      "IsEnable": false
+    },
+    {
+      "$type": "JSystem.Device.Camera2D, JSystem",
+      "CamType": 0,
+      "Gain": 1.0,
+      "Name": "右工位相机",
+      "IsEnable": false
+    },
+    {
+      "$type": "JSystem.Device.LightController, JSystem",
+      "PortName": "COM2",
+      "BaudRate": 115200,
+      "DataBits": 8,
+      "StopBits": 1,
+      "Parity": 0,
+      "Name": "上料光源",
+      "IsEnable": true
+    },
+    {
+      "$type": "JSystem.Device.LightController, JSystem",
+      "PortName": "COM4",
+      "BaudRate": 115200,
+      "DataBits": 8,
+      "StopBits": 1,
+      "Parity": 0,
+      "Name": "左工位光源",
+      "IsEnable": true
+    },
+    {
+      "$type": "JSystem.Device.LightController, JSystem",
+      "PortName": "COM3",
+      "BaudRate": 115200,
+      "DataBits": 8,
+      "StopBits": 1,
+      "Parity": 0,
+      "Name": "右工位光源",
+      "IsEnable": true
+    },
+    {
+      "$type": "JSystem.Device.HeightSensor, JSystem",
+      "PortName": "COM8",
+      "BaudRate": 9600,
+      "DataBits": 8,
+      "StopBits": 1,
+      "Parity": 0,
+      "Name": "生料测高仪1",
+      "IsEnable": true,
+      "CurrHeight": 0.0
+    },
+    {
+      "$type": "JSystem.Device.HeightSensor, JSystem",
+      "PortName": "COM9",
+      "BaudRate": 9600,
+      "DataBits": 8,
+      "StopBits": 1,
+      "Parity": 0,
+      "Name": "生料测高仪2",
+      "IsEnable": true,
+      "CurrHeight": 0.0
+    },
+    {
+      "$type": "JSystem.Device.HeightSensor, JSystem",
+      "PortName": "COM10",
+      "BaudRate": 9600,
+      "DataBits": 8,
+      "StopBits": 1,
+      "Parity": 0,
+      "Name": "熟料测高仪1",
+      "IsEnable": true,
+      "CurrHeight": 0.0
+    },
+    {
+      "$type": "JSystem.Device.HeightSensor, JSystem",
+      "PortName": "COM11",
+      "BaudRate": 9600,
+      "DataBits": 8,
+      "StopBits": 1,
+      "Parity": 0,
+      "Name": "熟料测高仪2",
+      "IsEnable": true,
+      "CurrHeight": 0.0
+    },
+    {
+      "$type": "JSystem.Device.RollPressSensor, JSystem",
+      "IP": "192.168.1.200",
+      "Port": 8088,
+      "Name": "左滚压压力传感器",
+      "IsEnable": false
+    },
+    {
+      "$type": "JSystem.Device.RollPressSensor, JSystem",
+      "IP": "192.168.1.201",
+      "Port": 8088,
+      "Name": "右滚压压力传感器",
+      "IsEnable": false
+    },
+    {
+      "$type": "JSystem.Device.DirectPressSensor, JSystem",
+      "IP": "192.168.1.202",
+      "Port": 502,
+      "Name": "左直压压力传感器",
+      "IsEnable": true
+    },
+    {
+      "$type": "JSystem.Device.DirectPressSensor, JSystem",
+      "IP": "192.168.1.203",
+      "Port": 502,
+      "Name": "右直压压力传感器",
+      "IsEnable": true
+    },
+    {
+      "$type": "JSystem.Device.Barometer, JSystem",
+      "PortName": "COM12",
+      "BaudRate": 115200,
+      "DataBits": 8,
+      "StopBits": 1,
+      "Parity": 0,
+      "Name": "左气压比例阀",
+      "IsEnable": true
+    },
+    {
+      "$type": "JSystem.Device.Barometer, JSystem",
+      "PortName": "COM13",
+      "BaudRate": 115200,
+      "DataBits": 8,
+      "StopBits": 1,
+      "Parity": 0,
+      "Name": "右气压比例阀",
+      "IsEnable": true
+    }
+  ]
+}
